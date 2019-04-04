@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API: 'https://andersonvicente.com.br/api/'
+  API: 'https://yourapi.com.br/api/'
 };
