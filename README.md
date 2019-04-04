@@ -1,4 +1,12 @@
-# Apiangular
+Aplicação do Curso Angular da Loiane
+=================
+
+Baseado no no curso de Angular gratuito do blog loiane.com - loiane.training
+
+### Link do curso com certificado:
+* [http://loiane.training/curso/angular/](http://loiane.training/curso/angular/)
+
+# Angular Consuming Rest API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
