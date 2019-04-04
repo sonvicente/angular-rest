@@ -1,0 +1,90 @@
+<form class="needs-validation" novalidate [formGroup]="form" style="padding-top: 20px">
+  <div class="form-row">
+    <div class="col-sm-12">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        placeholder="Username"
+        formControlName="username"
+        [ngClass]="{ 'is-invalid': submitted && hasError('username')}"
+      />
+    </div>
+    <div class="invalid-feedback" *ngIf="hasError('username') && hasError('username')['required']" >
+      Informe um username.
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-sm-12">
+      <label for="firstname">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        placeholder="Nome"
+        formControlName="firstname"
+        [ngClass]="{ 'is-invalid': submitted && hasError('firstname')}"
+      />
+    </div>
+    <div class="invalid-feedback" *ngIf="hasError('firstname') && hasError('firstname')['required']" >
+      Informe um nome.
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-sm-12">
+      <label for="lastname">Sobrenome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        placeholder="Sobrenome"
+        formControlName="lastname"
+        [ngClass]="{ 'is-invalid': submitted && hasError('lastname')}"
+      />
+    </div>
+    <div class="invalid-feedback" *ngIf="hasError('lastname') && hasError('lastname')['required']" >
+      Informe um sobrenome.
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-sm-12">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        placeholder="Email"
+        formControlName="email"
+        [ngClass]="{ 'is-invalid': submitted && hasError('email')}"
+      />
+    </div>
+    <div class="invalid-feedback" *ngIf="hasError('email') && hasError('email')['required']" >
+      Informe um username.
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-sm-12">
+      <label for="email">password</label>
+      <input
+        type="text"
+        class="form-control"
+        id="password"
+        placeholder="password"
+        formControlName="password"
+        [ngClass]="{ 'is-invalid': submitted && hasError('password')}"
+      />
+    </div>
+    <div class="invalid-feedback" *ngIf="hasError('password') && hasError('empasswordail')['required']" >
+      Informe um password.
+    </div>
+  </div>
+  <div style="margin-top: 10px">
+    <button type="sumit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+    <button type="button" class="btn btn-default" (click)="onCancel()">Cancelar</button>
+  </div>
+</form>
